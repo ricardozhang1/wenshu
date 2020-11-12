@@ -37,8 +37,8 @@ def login():
     print(resp_04.json())
 
     post_data = {
-        'username': '13559230717',
-        'password': 'p%2BOHyzAQPJ%2BLKh1xCp%2FjQzPxC%2BiS6SotDlgYVxzJXpJkWsfyIJ1R9AeguTaHyp7OczLi3HzWq0KHqTvKNq1FksuFUGlljwL%2Buwz%2BtpqDOeEbn31i7eB%2FscK7X7S26SvAbfyz%2F3XzTZDOYQx9pZZtFdcSYwJlr6sEV2ErwwZPi1svFB5YLm7YIUuYeA%2BGsrqlaXrYnqnJ4KFBCErW3m9utNDTKErckwEbeOPUbn%2FNUe7klADSbbNs%2Fer7xV0Neir2PGkaxwbUf%2FCnKm8%2B8ygzSPZ3fCZ3tn3tUDo4m25rFt5M%2BukEFyVflRHEjDBZ1D8ynOeOwtwzCwN3NslEez%2BRlA%3D%3D',
+        'username': '13511111111', # 账号
+        'password': '****',  # 需要去拦截post请求查看，没时间去查看加密过程。但是加密后的密码是可以重复使用的，与使用明文密码没有太大差别
         'appDomain': 'wenshu.court.gov.cn',
     }
 
@@ -67,7 +67,7 @@ def login():
 
 if __name__ == '__main__':
     session = login()
-    print(session)
+    print(session)  # 获取到的sessionId即可登录
 
 
 
